@@ -18,7 +18,7 @@ jobs:
       - run: deno task build
       - name: dimos.yaml check
         run: |
-          curl -fsSL -o dimos-desktop https://github.com/jeff-hykin/dimos-desktop-mirror/releases/latest/download/dimos-desktop-x86_64-unknown-linux-gnu
+          curl -fsSL -o dimos-desktop https://github.com/dimensionalOS/dimos-desktop-releases/releases/latest/download/dimos-desktop-x86_64-unknown-linux-gnu
           chmod +x dimos-desktop
           ./dimos-desktop app check .
   nix:
